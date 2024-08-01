@@ -1,6 +1,6 @@
 # PostgresII
 
-~~ sql 
+~~~sql 
 
 
 
@@ -53,4 +53,4 @@ SELECT idMunicipio , nombreMunicipio  , idDepartamento
 FROM localidad 
 order by idMunicipio;
 
-~~
+~~~
