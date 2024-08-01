@@ -37,8 +37,6 @@ create table localidad (
 \copy localidad (idDepartamento, nombreDepartamento, idMunicipio, nombreMunicipio )
     from '/home/camper/Escritorio/localidades.csv' WITH DELIMITER ',' CSV HEADER;
     
-  
-alter table municipio drop constraint nombre;
     
 insert into pais (id , nombre ) 
 values ( 1 , "Colombia");
