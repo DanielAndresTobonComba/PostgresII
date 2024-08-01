@@ -1,9 +1,5 @@
 # PostgresII
-
 ~~~sql 
-
-
-
 create table pais (
 	id serial primary key, 
 	nombre varchar(50) unique not null
@@ -32,8 +28,10 @@ create table localidad (
 	idMunicipio int not null,
 	nombreMunicipio varchar(50) not null
 );
+~~~
 
 
+~~~sql
 \copy localidad (idDepartamento, nombreDepartamento, idMunicipio, nombreMunicipio )
     from '/home/camper/Escritorio/localidades.csv' WITH DELIMITER ',' CSV HEADER;
     
@@ -52,5 +50,4 @@ INSERT INTO municipio (numMunicipio , nombre , idDepartamento)
 SELECT idMunicipio , nombreMunicipio  , idDepartamento
 FROM localidad 
 order by idMunicipio;
-
-~~~
+~~~ 
