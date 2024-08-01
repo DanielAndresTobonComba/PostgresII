@@ -1,4 +1,6 @@
 # PostgresII
+
+## DDL
 ~~~sql 
 create table pais (
 	id serial primary key, 
@@ -30,7 +32,7 @@ create table localidad (
 );
 ~~~
 
-
+## DML
 ~~~sql
 \copy localidad (idDepartamento, nombreDepartamento, idMunicipio, nombreMunicipio )
     from '/home/camper/Escritorio/localidades.csv' WITH DELIMITER ',' CSV HEADER;
